@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hava Durumu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <div class="header">
+                <h1>Hava Durumu</h1>
+                <input type="text" id="searchBar" placeholder="Sehir giriniz...">
+            </div>
+            <div class="content">
+                <div class="weather-section">
+                    <div class="city">Istanbul, TR</div>
+                    <div class="temp">15°C</div>
+                    <div class="desc">Güneşli</div>
+                    <div class="minmax">14°C / 19°C</div>
+                    <div class="advice">Kıyafet Tavsiyesi: Hafif giyinmeyi düşünebilirsin.</div>
+                </div>
+                <div class="outfit-section">
+                    <h2>Kıyafet Tavsiyesi</h2>
+                    <p id="outfit-advice">-</p>
+                </div>
+            </div>
+        </div>
+        <div class="agenda">
+            <h2>Ajanda</h2>
+    <ul id="todoList">
+        <li>
+            <input type="text" value="Sabah 10 Ders" />
+            <button onclick="removeTask(this)">Çıkar</button>
+        </li>
+        <li>
+            <input type="text" value="12:30 Öğlen Yemeği" />
+            <button onclick="removeTask(this)">Çıkar</button>
+        </li>
+        <li>
+            <input type="text" value="15:00 Proje Çalışması" />
+            <button onclick="removeTask(this)">Çıkar</button>
+        </li>
+    </ul>
+    <button onclick="addTask()">Görev Ekle </button>
+    </div>
+   
+    <div class="background"></div>
+    <script src="script.js"></script>
+</body>
+</html>
