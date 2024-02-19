@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0; /* Remove default body margin */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+
+}
+
+.app {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .7);
+    height: 100vh;
+    width: 70%; /* Adjust the width of the weather section */
+    overflow-y: auto; /* Add overflow for scrolling if needed */
+}
+
+.header {
+    padding: 50px 20px 30px 20px;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: #fbb034;
+    text-shadow: 1px 3px rgba(0, 0, 0, .9);
+}
+
+.header input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #fbb034;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.weather-section {
+    width: 100%; /* Make the weather section take full width */
+}
+
+.city {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    color: #ffffff;
+}
+
+.temp {
+    font-size: 100px;
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 5px rgba(0, 0, 0, .5);
+}
+
+.desc {
+    color: #ffffff;
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    margin-bottom: 10px;
+}
+
+.minmax {
+    font-size: 24px;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+    color: #ffffff;
+}
+
+.advice {
+    background-color: rgba(244, 244, 244, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 25px;
+    border: 2px solid #000000;
+    filter: contrast(5px);
+}
+
+.outfit-section {
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color: #fbb034;
+    padding: 15px; /* Adjust padding for better appearance */
+}
+
+.background {
+    filter: blur(10px);
+}
+
+/* Adjust styles for the agenda section */
+.agenda {
+    width: 70%;
+    padding: 60px;
+    background: rgba(0, 0, 0, .7);
+    overflow-y: auto;
+    color: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.agenda h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fbb034;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    border-bottom: 2px solid #fbb034;
+    background: transparent;
+    color: #ffffff;
+}
+
+button {
+    background-color: #fbb034;
+    color: #000000;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Mobil ekran stili */
+  }
+  
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Tablet ekran stili */
+  }
+
+/* Add these styles for the calendar section */
+
+
